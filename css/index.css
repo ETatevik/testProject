@@ -1,0 +1,1283 @@
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../font/Mark Simonson  Proxima Nova Regular.otf") format("OpenType"); }
+
+@font-face {
+  font-family: "Proxima Nova Black";
+  src: url("../font/Mark Simonson  Proxima Nova Black.otf") format("OpenType"); }
+
+@font-face {
+  font-family: "Proxima Nova Light Italic";
+  src: url("../font/Mark Simonson  Proxima Nova Light Italic.otf") format("OpenType"); }
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 0;
+  font-family: "Proxima Nova"; }
+
+html,
+body {
+  overflow-x: hidden; }
+
+header {
+  background: -webkit-linear-gradient(158.78deg, #000 3.28%, #002347 68.98%, #002B58 100%);
+  background: -o-linear-gradient(158.78deg, #000 3.28%, #002347 68.98%, #002B58 100%);
+  background: linear-gradient(291.22deg, #000 3.28%, #002347 68.98%, #002B58 100%); }
+  header #menuJoomag > .container {
+    padding: 15px 30px;
+    max-width: 1840px;
+    width: 100%;
+    margin: auto; }
+    header #menuJoomag > .container .row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      header #menuJoomag > .container .row .brand {
+        height: 20px;
+        margin-right: 30px; }
+        header #menuJoomag > .container .row .brand img {
+          height: inherit; }
+      header #menuJoomag > .container .row .menu-body {
+        width: 60%; }
+        header #menuJoomag > .container .row .menu-body ul li > a {
+          font-size: 16px !important;
+          color: #fff;
+          -webkit-transition: .2s;
+          -o-transition: .2s;
+          transition: .2s; }
+          header #menuJoomag > .container .row .menu-body ul li > a:hover {
+            color: #2863FD; }
+        header #menuJoomag > .container .row .menu-body > ul {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row; }
+          header #menuJoomag > .container .row .menu-body > ul > li {
+            position: relative;
+            padding: 0 20px 0  10px; }
+            header #menuJoomag > .container .row .menu-body > ul > li > a.active {
+              color: #2863FD !important; }
+            header #menuJoomag > .container .row .menu-body > ul > li > .dropdown-menu {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              font-size: 16px !important; }
+              header #menuJoomag > .container .row .menu-body > ul > li > .dropdown-menu h5,
+              header #menuJoomag > .container .row .menu-body > ul > li > .dropdown-menu ul li a {
+                color: #fff;
+                font-size: 16px !important; }
+              header #menuJoomag > .container .row .menu-body > ul > li > .dropdown-menu h5, header #menuJoomag > .container .row .menu-body > ul > li > .dropdown-menu ul li {
+                padding-bottom: 8px; }
+              header #menuJoomag > .container .row .menu-body > ul > li > .dropdown-menu h5 {
+                font-family: "Proxima Nova Black"; }
+            header #menuJoomag > .container .row .menu-body > ul > li > a > svg {
+              margin-left: 5px; }
+              header #menuJoomag > .container .row .menu-body > ul > li > a > svg.rotate {
+                -webkit-transform: rotate(180deg) !important;
+                -ms-transform: rotate(180deg) !important;
+                transform: rotate(180deg) !important; }
+      header #menuJoomag > .container .row .menu-btn {
+        margin-left: auto; }
+        header #menuJoomag > .container .row .menu-btn ul {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          header #menuJoomag > .container .row .menu-btn ul button {
+            font-size: 16px;
+            color: #fff;
+            background-color: transparent;
+            margin-right: 5px;
+            cursor: pointer; }
+          header #menuJoomag > .container .row .menu-btn ul .btn-blueWhite {
+            margin-left: 20px;
+            padding: 12px 30px;
+            background-color: #2863FD;
+            border-radius: 100px; }
+            header #menuJoomag > .container .row .menu-btn ul .btn-blueWhite:hover {
+              background-color: #0741B0; }
+      header #menuJoomag > .container .row .threeLineBtn {
+        margin-left: auto;
+        display: none; }
+        header #menuJoomag > .container .row .threeLineBtn button {
+          width: 30px;
+          height: 26px;
+          cursor: pointer;
+          background: transparent; }
+          header #menuJoomag > .container .row .threeLineBtn button .threeLineMenu {
+            background: white;
+            display: block;
+            width: 30px;
+            height: 2px;
+            border-radius: 5px;
+            position: relative;
+            -webkit-transition: .5s;
+            -o-transition: .5s;
+            transition: .5s; }
+            header #menuJoomag > .container .row .threeLineBtn button .threeLineMenu:before, header #menuJoomag > .container .row .threeLineBtn button .threeLineMenu:after {
+              content: '';
+              position: absolute;
+              background: white;
+              width: 30px;
+              height: 2px;
+              border-radius: 5px;
+              left: 0;
+              -webkit-transition: .5s;
+              -o-transition: .5s;
+              transition: .5s; }
+            header #menuJoomag > .container .row .threeLineBtn button .threeLineMenu:before {
+              top: -11px; }
+            header #menuJoomag > .container .row .threeLineBtn button .threeLineMenu:after {
+              bottom: -11px; }
+            header #menuJoomag > .container .row .threeLineBtn button .threeLineMenu.changeLine {
+              background: transparent; }
+            header #menuJoomag > .container .row .threeLineBtn button .threeLineMenu.changeLine::before {
+              -webkit-transform: rotate(40deg);
+              -ms-transform: rotate(40deg);
+              transform: rotate(40deg);
+              top: 0; }
+            header #menuJoomag > .container .row .threeLineBtn button .threeLineMenu.changeLine::after {
+              -webkit-transform: rotate(-40deg);
+              -ms-transform: rotate(-40deg);
+              transform: rotate(-40deg);
+              bottom: 0; }
+  header #heroHeader > .container {
+    max-width: 1840px;
+    width: 100%;
+    margin: 50px auto;
+    padding: 0 150px 0 240px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    header #heroHeader > .container .row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      header #heroHeader > .container .row .text h1 {
+        color: #fff;
+        font-size: 48px;
+        line-height: 62px; }
+      header #heroHeader > .container .row .text p {
+        color: #fff;
+        font-size: 40px;
+        margin-top: 30px; }
+      header #heroHeader > .container .row .pic {
+        max-width: 804px; }
+        header #heroHeader > .container .row .pic img {
+          max-width: inherit;
+          width: 100%; }
+
+#helpClientJoo {
+  background: #fff;
+  padding: 140px 0; }
+  #helpClientJoo > section.container {
+    max-width: 1144px;
+    width: 100%;
+    margin: auto; }
+    #helpClientJoo > section.container > .col {
+      width: 100%;
+      margin-bottom: 82px; }
+      #helpClientJoo > section.container > .col h1 {
+        font-size: 32px;
+        line-height: 42px;
+        color: #000;
+        font-weight: 900; }
+        #helpClientJoo > section.container > .col h1:last-child {
+          color: #2863FD;
+          margin-top: 13.49px;
+          font-family: "Proxima Nova Black"; }
+      #helpClientJoo > section.container > .col:after {
+        content: '';
+        width: 60px;
+        height: 4px;
+        border-radius: 10px;
+        background: #2863FD;
+        display: block;
+        margin-top: 16.7px; }
+    #helpClientJoo > section.container > .row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row; }
+      #helpClientJoo > section.container > .row .helpElems {
+        max-width: 260px;
+        width: 100%;
+        margin-right: 31px; }
+        #helpClientJoo > section.container > .row .helpElems:last-child {
+          margin-right: 0; }
+        #helpClientJoo > section.container > .row .helpElems h4,
+        #helpClientJoo > section.container > .row .helpElems p {
+          font-size: 18px;
+          line-height: 27px;
+          color: #000; }
+        #helpClientJoo > section.container > .row .helpElems img {
+          max-width: 121px; }
+        #helpClientJoo > section.container > .row .helpElems h4 {
+          margin: 42px 0 32px; }
+
+#customerTeamJoo {
+  background: #fff;
+  padding: 0 0 180px; }
+  #customerTeamJoo > section.container {
+    max-width: 1144px;
+    width: 100%;
+    margin: auto; }
+    #customerTeamJoo > section.container > .row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      #customerTeamJoo > section.container > .row .teamText {
+        margin-right: 83.97px;
+        max-width: 530px; }
+        #customerTeamJoo > section.container > .row .teamText .col {
+          width: 100%;
+          margin-bottom: 32.47px; }
+          #customerTeamJoo > section.container > .row .teamText .col h1 {
+            font-size: 32px;
+            line-height: 42px;
+            color: #000;
+            font-weight: 900; }
+            #customerTeamJoo > section.container > .row .teamText .col h1 > span {
+              font-family: "Proxima Nova Black";
+              color: #2863FD;
+              font-size: 32px;
+              line-height: 42px; }
+          #customerTeamJoo > section.container > .row .teamText .col:after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            border-radius: 10px;
+            background: #2863FD;
+            display: block;
+            margin-top: 16.12px; }
+        #customerTeamJoo > section.container > .row .teamText p {
+          font-size: 18px;
+          line-height: 27px;
+          color: #000; }
+      #customerTeamJoo > section.container > .row .teamImg {
+        max-width: 533px;
+        width: 100%;
+        position: relative;
+        z-index: 100; }
+        #customerTeamJoo > section.container > .row .teamImg > img {
+          width: inherit;
+          -webkit-box-shadow: -10px -10px 50px rgba(0, 0, 0, 0.05);
+          box-shadow: -10px -10px 50px rgba(0, 0, 0, 0.05);
+          position: relative;
+          z-index: 100; }
+        #customerTeamJoo > section.container > .row .teamImg:before {
+          content: '';
+          background: #F1F8FF;
+          width: 100vw;
+          height: 526.15px;
+          display: block;
+          position: absolute;
+          z-index: 5;
+          top: -40.07px;
+          left: 166px; }
+
+#contactUsJoo {
+  position: relative;
+  background: transparent; }
+  #contactUsJoo .container-fluid {
+    background: -webkit-linear-gradient(137.66deg, #000000 3.28%, #002347 68.98%, #002B58 100%);
+    background: -o-linear-gradient(137.66deg, #000000 3.28%, #002347 68.98%, #002B58 100%);
+    background: linear-gradient(312.34deg, #000000 3.28%, #002347 68.98%, #002B58 100%);
+    padding: 116px 0;
+    position: relative;
+    z-index: 10;
+    margin: 41px auto; }
+    #contactUsJoo .container-fluid > section.container {
+      max-width: 1144px;
+      width: 100%;
+      margin: auto; }
+      #contactUsJoo .container-fluid > section.container > .row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        #contactUsJoo .container-fluid > section.container > .row h2 {
+          font-size: 32px;
+          line-height: 42px;
+          color: #fff; }
+          #contactUsJoo .container-fluid > section.container > .row h2 > span {
+            font-size: 32px;
+            line-height: 42px;
+            color: #fff;
+            font-family: "Proxima Nova Black"; }
+        #contactUsJoo .container-fluid > section.container > .row button {
+          font-size: 16px;
+          color: #fff;
+          cursor: pointer; }
+          #contactUsJoo .container-fluid > section.container > .row button.chatBtn {
+            margin-top: 40.27px;
+            padding: 12px 30px;
+            background: #2836FD;
+            border-radius: 100px; }
+            #contactUsJoo .container-fluid > section.container > .row button.chatBtn:hover {
+              background-color: #0741B0; }
+  #contactUsJoo:before {
+    content: '';
+    background: #F1F8FF;
+    width: 100vw;
+    height: 120%;
+    display: block;
+    position: absolute;
+    z-index: 5;
+    top: -10%;
+    left: 50%; }
+
+#customerSay {
+  background: #fff;
+  padding: 140px 0 180px; }
+  #customerSay > section.container {
+    max-width: 1144px;
+    width: 100%;
+    margin: auto; }
+    #customerSay > section.container .col {
+      width: 100%;
+      margin-bottom: 50.45px; }
+      #customerSay > section.container .col h1 {
+        font-size: 32px;
+        line-height: 42px;
+        color: #000;
+        font-weight: 900; }
+        #customerSay > section.container .col h1 > span {
+          font-family: "Proxima Nova Black";
+          color: #2863FD;
+          font-size: 32px;
+          line-height: 42px; }
+      #customerSay > section.container .col:after {
+        content: '';
+        width: 60px;
+        height: 4px;
+        border-radius: 10px;
+        background: #2863FD;
+        display: block;
+        margin-top: 16.45px; }
+    #customerSay > section.container > .row {
+      position: relative; }
+      #customerSay > section.container > .row #caruselCustomSay {
+        position: relative;
+        z-index: 10;
+        overflow: hidden;
+        padding: 72.18px 71.53px;
+        background: #002B58;
+        margin: 91.17px 40px; }
+        #customerSay > section.container > .row #caruselCustomSay > ul {
+          width: 100% !important;
+          height: inherit;
+          margin: auto;
+          max-width: 1091.33px;
+          overflow: hidden;
+          position: relative;
+          z-index: 50; }
+          #customerSay > section.container > .row #caruselCustomSay > ul > li.carusel-item {
+            width: 100% !important; }
+            #customerSay > section.container > .row #caruselCustomSay > ul > li.carusel-item p {
+              font-size: 18px;
+              line-height: 27px;
+              color: #fff;
+              font-family: "Proxima Nova Light Italic"; }
+              #customerSay > section.container > .row #caruselCustomSay > ul > li.carusel-item p:nth-child(2) {
+                margin-top: 50px; }
+            #customerSay > section.container > .row #caruselCustomSay > ul > li.carusel-item h4 {
+              font-size: 18px;
+              line-height: 27px;
+              font-style: italic;
+              color: #fff;
+              text-align: right;
+              margin-top: 25.65px; }
+      #customerSay > section.container > .row > .ts-controls {
+        position: absolute;
+        z-index: 50;
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        top: calc(50% - 40px); }
+        #customerSay > section.container > .row > .ts-controls button {
+          background: transparent;
+          width: 80px;
+          height: 80px;
+          cursor: pointer; }
+          #customerSay > section.container > .row > .ts-controls button.ts-prev {
+            -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }
+      #customerSay > section.container > .row:before {
+        content: '';
+        background: #F1F8FF;
+        width: 100vw;
+        height: 115%;
+        display: block;
+        position: absolute;
+        z-index: 5;
+        top: -7.5%;
+        right: 50%; }
+
+footer {
+  background: -webkit-linear-gradient(161.8deg, #002347 1.74%, #002B58 100%);
+  background: -o-linear-gradient(161.8deg, #002347 1.74%, #002B58 100%);
+  background: linear-gradient(288.2deg, #002347 1.74%, #002B58 100%);
+  padding: 50.43px 0 62.43px; }
+  footer > section.container {
+    max-width: 1144px;
+    width: 100%;
+    margin: auto; }
+    footer > section.container #footer-menu > .row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      -ms-flex-line-pack: start;
+      align-content: flex-start;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      footer > section.container #footer-menu > .row .dropFooMenu {
+        margin-bottom: 40.34px; }
+        footer > section.container #footer-menu > .row .dropFooMenu:nth-child(3) {
+          -ms-flex-line-pack: stretch;
+          align-content: stretch; }
+        footer > section.container #footer-menu > .row .dropFooMenu h5 {
+          font-size: 16px;
+          line-height: 23px;
+          color: #fff;
+          margin-bottom: 16px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between; }
+          footer > section.container #footer-menu > .row .dropFooMenu h5 > img {
+            display: none; }
+        footer > section.container #footer-menu > .row .dropFooMenu > .drop-body > li {
+          margin-bottom: 2px; }
+          footer > section.container #footer-menu > .row .dropFooMenu > .drop-body > li > a {
+            font-size: 14px;
+            line-height: 22px;
+            color: #ACB4BF; }
+            footer > section.container #footer-menu > .row .dropFooMenu > .drop-body > li > a:hover {
+              color: #2863FD; }
+      footer > section.container #footer-menu > .row .box {
+        width: 25%; }
+      footer > section.container #footer-menu > .row .box-row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        width: 50%;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+      footer > section.container #footer-menu > .row .addres {
+        width: 269px; }
+        footer > section.container #footer-menu > .row .addres > ul:first-child {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-pack: start;
+          -ms-flex-pack: start;
+          justify-content: flex-start; }
+          footer > section.container #footer-menu > .row .addres > ul:first-child > li {
+            margin-right: 19.74px; }
+            footer > section.container #footer-menu > .row .addres > ul:first-child > li:first-child > a > img {
+              height: inherit;
+              width: auto; }
+            footer > section.container #footer-menu > .row .addres > ul:first-child > li > a {
+              width: 20px;
+              height: 20px; }
+              footer > section.container #footer-menu > .row .addres > ul:first-child > li > a > img {
+                width: inherit;
+                height: inherit; }
+        footer > section.container #footer-menu > .row .addres > ul:nth-child(2) {
+          margin-top: 15.26px; }
+          footer > section.container #footer-menu > .row .addres > ul:nth-child(2) > li {
+            font-size: 14px;
+            line-height: 24px;
+            color: #ACB4BF;
+            margin-bottom: 2px; }
+      footer > section.container #footer-menu > .row .readReviews {
+        width: 269px;
+        margin-top: 55.55px; }
+        footer > section.container #footer-menu > .row .readReviews > img {
+          width: 145.98px; }
+        footer > section.container #footer-menu > .row .readReviews > p {
+          width: 102.24px;
+          margin-top: 16.83px; }
+          footer > section.container #footer-menu > .row .readReviews > p > a {
+            font-size: 14px;
+            color: #ACB4BF;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between; }
+    footer > section.container > .footer-data {
+      margin-top: 40.28px; }
+      footer > section.container > .footer-data > .row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end; }
+        footer > section.container > .footer-data > .row .copy-data p,
+        footer > section.container > .footer-data > .row .copy-data p > span {
+          font-size: 14px;
+          line-height: 24px;
+          color: #ACB4BF; }
+        footer > section.container > .footer-data > .row .minMenuFooter > ul {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          -webkit-box-align: end;
+          -ms-flex-align: end;
+          align-items: flex-end; }
+          footer > section.container > .footer-data > .row .minMenuFooter > ul > li {
+            margin-right: 20.12px; }
+            footer > section.container > .footer-data > .row .minMenuFooter > ul > li > a {
+              font-size: 14px;
+              line-height: 24px;
+              color: #ACB4BF; }
+              footer > section.container > .footer-data > .row .minMenuFooter > ul > li > a:hover {
+                color: #2863FD; }
+            footer > section.container > .footer-data > .row .minMenuFooter > ul > li > ul {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+              flex-direction: column; }
+              footer > section.container > .footer-data > .row .minMenuFooter > ul > li > ul > li > a {
+                font-size: 14px;
+                line-height: 24px;
+                color: #ACB4BF;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center; }
+                footer > section.container > .footer-data > .row .minMenuFooter > ul > li > ul > li > a:hover {
+                  color: #2863FD; }
+                footer > section.container > .footer-data > .row .minMenuFooter > ul > li > ul > li > a > img {
+                  width: 10px;
+                  height: 10px;
+                  display: none;
+                  margin-left: 5.52px;
+                  -webkit-transform: rotate(-90deg);
+                  -ms-transform: rotate(-90deg);
+                  transform: rotate(-90deg); }
+              footer > section.container > .footer-data > .row .minMenuFooter > ul > li > ul > li.activeLang > a > img {
+                display: inline; }
+              footer > section.container > .footer-data > .row .minMenuFooter > ul > li > ul > li.activeLang > a:hover {
+                color: #ACB4BF; }
+
+@media (max-width: 1200px) {
+  #helpClientJoo {
+    padding: 140px 50px; }
+  #customerTeamJoo {
+    padding: 0 50px 180px; }
+  #customerSay {
+    padding: 140px 50px 180px; }
+  footer {
+    padding-left: 50px;
+    padding-right: 50px; } }
+
+@media (max-width: 1000px) and (min-width: 800px) {
+  #customerTeamJoo > section.container > .row .teamImg:before {
+    height: 469px !important; } }
+
+@media (min-width: 993px) {
+  header {
+    height: 100vh;
+    max-height: 780px; }
+    header #menuJoomag .container .row .menu-body > ul > li > .dropdown-menu {
+      position: absolute;
+      background: #fff;
+      padding: 16px 20px;
+      top: 38px;
+      -webkit-box-orient: horizontal !important;
+      -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+      flex-direction: row !important;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      header #menuJoomag .container .row .menu-body > ul > li > .dropdown-menu:before {
+        content: '';
+        width: 15px;
+        height: 15px;
+        background-color: #fff;
+        position: absolute;
+        top: -7.5px;
+        left: 30px;
+        -webkit-transform: rotateZ(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotateZ(45deg); }
+      header #menuJoomag .container .row .menu-body > ul > li > .dropdown-menu ul li a,
+      header #menuJoomag .container .row .menu-body > ul > li > .dropdown-menu h5 {
+        color: #000 !important; }
+      header #menuJoomag .container .row .menu-body > ul > li > .dropdown-menu ul li:hover > a {
+        color: #2863FD !important; }
+    header #menuJoomag .container .row .menu-body > ul > li:first-child > .dropdown-menu {
+      width: 680px; }
+    header #menuJoomag .container .row .menu-body > ul > li:last-child > .dropdown-menu {
+      width: 232px; } }
+
+@media (max-width: 992px) {
+  header {
+    background: -webkit-linear-gradient(168.27deg, #000000 3.28%, #002347 68.98%, #002B58 100%);
+    background: -o-linear-gradient(168.27deg, #000000 3.28%, #002347 68.98%, #002B58 100%);
+    background: linear-gradient(281.73deg, #000000 3.28%, #002347 68.98%, #002B58 100%); }
+    header #menuJoomag > .container > .row {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      header #menuJoomag > .container > .row .brand {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+        width: 60%; }
+      header #menuJoomag > .container > .row .menu-body {
+        -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+        order: 4;
+        width: 100% !important;
+        margin-top: 40px; }
+        header #menuJoomag > .container > .row .menu-body > ul {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          width: 100% !important; }
+          header #menuJoomag > .container > .row .menu-body > ul > li {
+            margin-top: 30px;
+            padding: 0;
+            width: 100% !important; }
+            header #menuJoomag > .container > .row .menu-body > ul > li:first-child {
+              margin-top: 0 !important; }
+          header #menuJoomag > .container > .row .menu-body > ul .dropdown-menu {
+            padding: 0px 40px;
+            width: 60%; }
+            header #menuJoomag > .container > .row .menu-body > ul .dropdown-menu > ul > li {
+              margin-top: 20px; }
+            header #menuJoomag > .container > .row .menu-body > ul .dropdown-menu > ul > h5 {
+              margin-top: 30px; }
+      header #menuJoomag > .container > .row .menu-btn {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2; }
+      header #menuJoomag > .container > .row .threeLineBtn {
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+        order: 3;
+        display: block; }
+    header #heroHeader > .container {
+      padding: 34px 30px;
+      margin-bottom: 0; }
+      header #heroHeader > .container > .row {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        header #heroHeader > .container > .row .text {
+          width: 60%; }
+          header #heroHeader > .container > .row .text h1 {
+            font-size: 40px;
+            line-height: 52px; }
+          header #heroHeader > .container > .row .text p {
+            font-size: 32px;
+            line-height: 45px; }
+        header #heroHeader > .container > .row .pic {
+          margin-left: auto;
+          max-width: 608px;
+          width: 100%;
+          margin-top: 23px; }
+  #helpClientJoo {
+    padding: 100.95px 27.33px  100.95px; }
+    #helpClientJoo > section.container > .col {
+      margin-bottom: 51.59px; }
+      #helpClientJoo > section.container > .col h1 {
+        font-size: 24px;
+        line-height: 36px; }
+        #helpClientJoo > section.container > .col h1:last-child {
+          margin-top: 0px; }
+      #helpClientJoo > section.container > .col:after {
+        margin-top: 16.59px; }
+    #helpClientJoo > section.container > .row {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      #helpClientJoo > section.container > .row .helpElems {
+        max-width: 400px;
+        margin-right: 22.41px; }
+        #helpClientJoo > section.container > .row .helpElems:nth-child(2), #helpClientJoo > section.container > .row .helpElems:last-child {
+          margin-right: 0; }
+        #helpClientJoo > section.container > .row .helpElems:nth-child(3), #helpClientJoo > section.container > .row .helpElems:last-child {
+          margin-top: 81.46px; }
+        #helpClientJoo > section.container > .row .helpElems h4,
+        #helpClientJoo > section.container > .row .helpElems p {
+          font-size: 18px;
+          line-height: 27px;
+          color: #000; }
+        #helpClientJoo > section.container > .row .helpElems img {
+          max-width: 121px; }
+        #helpClientJoo > section.container > .row .helpElems h4 {
+          margin: 42px 0 32px; }
+  #customerTeamJoo {
+    padding: 0 27.33px 153.62px; }
+    #customerTeamJoo > section.container > .row .teamText {
+      margin-right: 80.18px;
+      max-width: 430px; }
+      #customerTeamJoo > section.container > .row .teamText .col {
+        margin-bottom: 32.45px; }
+        #customerTeamJoo > section.container > .row .teamText .col h1 {
+          font-size: 24px;
+          line-height: 42px; }
+          #customerTeamJoo > section.container > .row .teamText .col h1 > span {
+            font-size: 24px;
+            line-height: 42px; }
+        #customerTeamJoo > section.container > .row .teamText .col:after {
+          margin-top: 16.32px; }
+    #customerTeamJoo > section.container > .row .teamImg {
+      max-width: 468.23px; }
+      #customerTeamJoo > section.container > .row .teamImg:before {
+        top: -32.23px;
+        left: 131.49px;
+        height: 423.12px; }
+  #contactUsJoo > .container-fluid {
+    background: -webkit-linear-gradient(154.15deg, #000000 3.28%, #002347 68.98%, #002B58 100%);
+    background: -o-linear-gradient(154.15deg, #000000 3.28%, #002347 68.98%, #002B58 100%);
+    background: linear-gradient(295.85deg, #000000 3.28%, #002347 68.98%, #002B58 100%); }
+  #customerSay {
+    padding: 100.16px 27.33px 186px; }
+    #customerSay > section.container .col {
+      margin-bottom: 50.54px; }
+      #customerSay > section.container .col h1 {
+        font-size: 24px; }
+        #customerSay > section.container .col h1 > span {
+          font-size: 24px; }
+    #customerSay > section.container > .row {
+      margin-top: 91.26px; }
+      #customerSay > section.container > .row #caruselCustomSay {
+        margin-top: 91.17px;
+        padding: 65.18px 52.89px;
+        margin: 0 40px; }
+        #customerSay > section.container > .row #caruselCustomSay > ul {
+          max-width: 891.92px !important; }
+          #customerSay > section.container > .row #caruselCustomSay > ul > li.carusel-item h4 {
+            font-size: 18px;
+            margin-top: 18.12px; }
+      #customerSay > section.container > .row:before {
+        height: 120%;
+        top: -10%;
+        right: 50%; }
+  footer {
+    background: -webkit-linear-gradient(167.7deg, #002347 1.74%, #002B58 100%);
+    background: -o-linear-gradient(167.7deg, #002347 1.74%, #002B58 100%);
+    background: linear-gradient(282.3deg, #002347 1.74%, #002B58 100%);
+    padding: 50.53px 33.91px; }
+    footer > section.container #footer-menu > .row .dropFooMenu {
+      margin-bottom: 40.25px; }
+    footer > section.container #footer-menu > .row .box-row {
+      width: 50%;
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+    footer > section.container #footer-menu > .row .addres {
+      width: auto; }
+      footer > section.container #footer-menu > .row .addres > ul:nth-child(2) {
+        margin-top: 16.45px; }
+    footer > section.container #footer-menu > .row .readReviews {
+      margin-top: 52.05px;
+      width: auto; } }
+
+@media (max-width: 899px) {
+  #helpClientJoo > section.container > .row .helpElems {
+    max-width: 325px !important; } }
+
+@media (max-width: 768px) {
+  header {
+    background: -webkit-linear-gradient(171.79deg, #000000 20.5%, #002347 69.79%, #002B58 100%, #002B58 100%, #002B58 100%);
+    background: -o-linear-gradient(171.79deg, #000000 20.5%, #002347 69.79%, #002B58 100%, #002B58 100%, #002B58 100%);
+    background: linear-gradient(278.21deg, #000000 20.5%, #002347 69.79%, #002B58 100%, #002B58 100%, #002B58 100%); }
+    header #menuJoomag > .container {
+      padding: 20px 20px 10px; }
+      header #menuJoomag > .container > .row > .brand {
+        width: 55%; }
+    header #heroHeader > .container {
+      padding: 0 64px 119px 23px;
+      margin-top: 75px; }
+      header #heroHeader > .container > .row {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start; }
+        header #heroHeader > .container > .row .dropdown-menu {
+          width: 100%; }
+        header #heroHeader > .container > .row .text {
+          width: 85%; }
+          header #heroHeader > .container > .row .text h1 {
+            font-size: 40px;
+            line-height: 52px; }
+          header #heroHeader > .container > .row .text p {
+            font-size: 32px;
+            line-height: 45px; }
+        header #heroHeader > .container > .row .pic {
+          margin: auto;
+          max-width: 667px;
+          width: 100%;
+          margin-top: 103px;
+          padding-left: 14px; }
+  #helpClientJoo {
+    padding: 100px 22.75px  100px; }
+    #helpClientJoo > section.container > .row .helpElems {
+      max-width: 320px !important;
+      width: 45%;
+      margin-right: 31.4px; }
+      #helpClientJoo > section.container > .row .helpElems:nth-child(2), #helpClientJoo > section.container > .row .helpElems:last-child {
+        margin-right: 0; }
+      #helpClientJoo > section.container > .row .helpElems:nth-child(3), #helpClientJoo > section.container > .row .helpElems:last-child {
+        margin-top: 81.46px; }
+  #customerTeamJoo {
+    padding: 0 22.75px  141.08px; }
+    #customerTeamJoo > section.container > .row .teamText {
+      margin-right: 44px;
+      max-width: 340px; }
+      #customerTeamJoo > section.container > .row .teamText .col {
+        margin-bottom: 32.45px; }
+        #customerTeamJoo > section.container > .row .teamText .col h1 {
+          font-size: 24px;
+          line-height: 36px; }
+          #customerTeamJoo > section.container > .row .teamText .col h1 > span {
+            font-size: 24px;
+            line-height: 36px; }
+        #customerTeamJoo > section.container > .row .teamText .col:after {
+          margin-top: 16.99px; }
+    #customerTeamJoo > section.container > .row .teamImg {
+      max-width: 339.69px;
+      width: 100%; }
+      #customerTeamJoo > section.container > .row .teamImg:before {
+        top: -25.54px;
+        left: 104.21px;
+        height: 335.32px; }
+  #contactUsJoo > .container-fluid {
+    background: -webkit-linear-gradient(314deg, #000000 3.28, #002347 68.98, #002B58 100%);
+    background: -o-linear-gradient(314deg, #000000 3.28, #002347 68.98, #002B58 100%);
+    background: -webkit-linear-gradient(46deg, #000000 3.28, #002347 68.98, #002B58 100%);
+    background: -o-linear-gradient(46deg, #000000 3.28, #002347 68.98, #002B58 100%);
+    background: linear-gradient(44deg, #000000 3.28, #002347 68.98, #002B58 100%);
+    padding: 84px 0; }
+    #contactUsJoo > .container-fluid > section.container > .row h2 {
+      font-size: 24px; }
+      #contactUsJoo > .container-fluid > section.container > .row h2 > span {
+        font-size: 24px; }
+    #contactUsJoo > .container-fluid > section.container > .row button {
+      font-size: 16px; }
+      #contactUsJoo > .container-fluid > section.container > .row button.chatBtn {
+        margin-top: 30.84px; }
+  #contactUsJoo:before {
+    height: 115%;
+    top: -7.5%; }
+  #customerSay {
+    padding: 100.7px 22.75px 197.02px; }
+    #customerSay > section.container .col {
+      margin-bottom: 50.95px; }
+    #customerSay > section.container > .row {
+      margin-top: 91.66px; }
+      #customerSay > section.container > .row #caruselCustomSay {
+        padding: 65.18px 47.37px;
+        margin: 0 40px; }
+        #customerSay > section.container > .row #caruselCustomSay > ul {
+          max-width: 575.25px !important; }
+          #customerSay > section.container > .row #caruselCustomSay > ul > li.carusel-item h4 {
+            font-size: 18px;
+            margin-top: 25.47px; }
+      #customerSay > section.container > .row:before {
+        height: 115%;
+        top: -7%;
+        right: 50%; }
+  footer {
+    background: -webkit-linear-gradient(173.44deg, #002347 1.74%, #002B58 100%);
+    background: -o-linear-gradient(173.44deg, #002347 1.74%, #002B58 100%);
+    background: linear-gradient(276.56deg, #002347 1.74%, #002B58 100%);
+    padding: 50.31px 22.75px; }
+    footer > section.container #footer-menu > .row .box-row {
+      width: auto;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+    footer > section.container #footer-menu > .row .readReviews {
+      margin-top: 40.82px; }
+    footer > section.container > .footer-data {
+      margin-top: 80.92px; }
+      footer > section.container > .footer-data > .row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start; }
+        footer > section.container > .footer-data > .row .copy-data {
+          -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+          order: 2;
+          margin-top: 10.92px; }
+        footer > section.container > .footer-data > .row .minMenuFooter {
+          -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+          order: 1; } }
+
+@media (max-width: 700px) {
+  header #menuJoomag > .container > .row > .brand {
+    width: 45%; } }
+
+@media (max-width: 570px) {
+  footer {
+    background: -webkit-linear-gradient(175.85deg, #002347 1.74%, #002B58 100%);
+    background: -o-linear-gradient(175.85deg, #002347 1.74%, #002B58 100%);
+    background: linear-gradient(274.15deg, #002347 1.74%, #002B58 100%);
+    padding: 39.99px 28.64px; }
+    footer > section.container #footer-menu > .row {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      footer > section.container #footer-menu > .row .dropFooMenu {
+        margin-bottom: 31.93px;
+        width: 100%; }
+        footer > section.container #footer-menu > .row .dropFooMenu h5 {
+          cursor: pointer; }
+          footer > section.container #footer-menu > .row .dropFooMenu h5 > img {
+            display: block;
+            -webkit-transition: .5s;
+            -o-transition: .5s;
+            transition: .5s; }
+          footer > section.container #footer-menu > .row .dropFooMenu h5.active > img {
+            -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }
+        footer > section.container #footer-menu > .row .dropFooMenu:after {
+          content: '';
+          width: 100%;
+          height: 1px;
+          background: #fff;
+          border-radius: 10px;
+          display: block;
+          margin-top: 10.76px; }
+        footer > section.container #footer-menu > .row .dropFooMenu > .drop-body > li:last-child {
+          margin-bottom: 19.93px; }
+      footer > section.container #footer-menu > .row .box {
+        width: 100%; }
+      footer > section.container #footer-menu > .row .box-row {
+        width: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+      footer > section.container #footer-menu > .row .addres {
+        margin-top: 60.40px; }
+      footer > section.container #footer-menu > .row .readReviews {
+        margin-top: 30.9px; }
+    footer > section.container > .footer-data .row > .minMenuFooter > ul {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      footer > section.container > .footer-data .row > .minMenuFooter > ul > li {
+        margin-bottom: 20.41px; } }
+
+@media (max-width: 550px) {
+  header #menuJoomag > .container > .row > .brand {
+    width: auto; }
+  #customerTeamJoo > section.container > .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    #customerTeamJoo > section.container > .row .teamText {
+      margin-right: 0;
+      max-width: 350px; }
+    #customerTeamJoo > section.container > .row .teamImg {
+      margin-top: 64.16px;
+      max-width: 350px;
+      width: 100%; }
+      #customerTeamJoo > section.container > .row .teamImg:before {
+        top: -24.1px;
+        left: 98.33px;
+        height: 356.4px; } }
+
+@media (max-width: 460px) {
+  header #menuJoomag > .container > .row .brand {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    width: 60%; }
+  header #menuJoomag > .container > .row .menu-body {
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4;
+    width: 100% !important;
+    margin-top: 0; }
+  header #menuJoomag > .container > .row .menu-btn {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+    width: 100% !important;
+    margin: 50px 0; }
+    header #menuJoomag > .container > .row .menu-btn > ul {
+      -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+      justify-content: flex-start !important; }
+  header #menuJoomag > .container > .row .threeLineBtn {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    display: block; }
+  header #heroHeader > .container {
+    margin-top: 30px; }
+    header #heroHeader > .container > .row > .text {
+      width: 100%; }
+  #helpClientJoo {
+    padding: 80px 20px; }
+    #helpClientJoo > section.container > .row .helpElems {
+      max-width: 350px !important;
+      width: 100%;
+      margin-top: 81.46px;
+      margin-right: 0; }
+      #helpClientJoo > section.container > .row .helpElems:first-child {
+        margin-top: 0; }
+      #helpClientJoo > section.container > .row .helpElems h4 {
+        margin: 40px 0 22px; }
+  #customerTeamJoo {
+    padding: 0 20px  120.95px; }
+    #customerTeamJoo > section.container > .row {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      #customerTeamJoo > section.container > .row .teamText {
+        margin-right: 0;
+        max-width: 350px; }
+      #customerTeamJoo > section.container > .row .teamImg {
+        margin-top: 64.16px;
+        max-width: 350px;
+        width: 100%; }
+        #customerTeamJoo > section.container > .row .teamImg:before {
+          top: -24.1px;
+          left: 98.33px;
+          height: 356.4px; }
+  #customerSay {
+    padding: 80.47px 20px 167.11px; }
+    #customerSay > section.container .col {
+      margin-bottom: 50.34px; }
+    #customerSay > section.container > .row {
+      margin-top: 91.06px; }
+      #customerSay > section.container > .row #caruselCustomSay {
+        padding: 65.15px 26.65px;
+        margin: 0; }
+        #customerSay > section.container > .row #caruselCustomSay > ul {
+          max-width: 318.72px !important; }
+          #customerSay > section.container > .row #caruselCustomSay > ul > li.carusel-item {
+            margin-right: 50px; }
+            #customerSay > section.container > .row #caruselCustomSay > ul > li.carusel-item h4 {
+              margin-top: 25.12px;
+              text-align: left; }
+      #customerSay > section.container > .row:before {
+        height: 108%;
+        top: -4%;
+        right: 50%; }
+      #customerSay > section.container > .row > .ts-controls {
+        display: none; }
+  footer > section.container > .footer-data .row > .copy-data {
+    margin-top: 40.77px; } }
+
+@media (max-width: 360px) {
+  header {
+    background: -webkit-linear-gradient(173.82deg, #000000 20.5%, #002347 69.79%, #002B58 100%);
+    background: -o-linear-gradient(173.82deg, #000000 20.5%, #002347 69.79%, #002B58 100%);
+    background: linear-gradient(276.18deg, #000000 20.5%, #002347 69.79%, #002B58 100%); }
+    header #menuJoomag > .container {
+      padding: 15px 19px; }
+    header #heroHeader > .container {
+      padding: 0 6.25px 68.92px 9.75px;
+      margin-top: 35px; }
+      header #heroHeader > .container > .row {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start; }
+        header #heroHeader > .container > .row .text {
+          width: 100%;
+          padding: 0 10px; }
+          header #heroHeader > .container > .row .text h1 {
+            font-size: 32px;
+            line-height: 42px; }
+          header #heroHeader > .container > .row .text p {
+            font-size: 24px;
+            line-height: 36px; }
+        header #heroHeader > .container > .row .pic {
+          margin: auto;
+          max-width: 344px;
+          width: 100%;
+          margin-top: 58px;
+          padding-left: 0; }
+  #customerTeamJoo > section.container > .row .teamImg:before {
+    height: 300px !important; }
+  #contactUsJoo > .container-fluid {
+    background: -webkit-linear-gradient(314deg, #000000 3.28, #002347 68.98, #002B58 100%);
+    background: -o-linear-gradient(314deg, #000000 3.28, #002347 68.98, #002B58 100%);
+    background: -webkit-linear-gradient(46deg, #000000 3.28, #002347 68.98, #002B58 100%);
+    background: -o-linear-gradient(46deg, #000000 3.28, #002347 68.98, #002B58 100%);
+    background: linear-gradient(44deg, #000000 3.28, #002347 68.98, #002B58 100%);
+    padding: 93.5px 19px; }
+    #contactUsJoo > .container-fluid > section.container > .row h2 {
+      font-size: 20px;
+      text-align: center; }
+      #contactUsJoo > .container-fluid > section.container > .row h2 > span {
+        font-size: 20px; }
+    #contactUsJoo > .container-fluid > section.container > .row button {
+      font-size: 16px; }
+      #contactUsJoo > .container-fluid > section.container > .row button.chatBtn {
+        margin-top: 30.56px; }
+  #contactUsJoo:before {
+    height: 120%;
+    top: -5%; }
+  footer {
+    background: -webkit-linear-gradient(175.85deg, #002347 1.74%, #002B58 100%);
+    background: -o-linear-gradient(175.85deg, #002347 1.74%, #002B58 100%);
+    background: linear-gradient(274.15deg, #002347 1.74%, #002B58 100%);
+    padding: 39.99px 20px; } }
+
+@media (max-width: 260px) {
+  header #menuJoomag > .container > .row .menu-btn > ul {
+    -webkit-box-pack: start !important;
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    header #menuJoomag > .container > .row .menu-btn > ul > li {
+      margin: 0; }
+      header #menuJoomag > .container > .row .menu-btn > ul > li button,
+      header #menuJoomag > .container > .row .menu-btn > ul > li .btn-blueWhite {
+        margin: 10px auto; }
+  #customerTeamJoo > section.container > .row .teamImg:before {
+    height: 200px !important; } }
